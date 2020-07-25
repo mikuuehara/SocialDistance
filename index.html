@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" charset="utf-8">
+<html>
+
+<head>
+  <title>ソーシャルディスタンスシュミレーション</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="content-type" charset="utf-8">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+
+  <div id="popup">
+    <div class="block">
+      <img id="popup_img" src="images/smartphone.png">
+      <p>横向きでの閲覧を推奨します。</p>
+      <p><button id="close" class="button_link" onclick="window_close();">閉じる</button></p>
+    </div>
+  </div>
+  <div id="popup_overlay"></div>
+
+    <div class="effect">
+      <div class="fade">
+        <h1>？ ソーシャルディスタンスってなに ？
+        </h1>
+        <br>
+        <p>ソーシャルディスタンスとは新型コロナウイルス対策として提唱された
+          <br>自分、または相手への感染を防ぐための社会的距離のことです
+          <br>
+          <br>相手との距離を
+        </p>
+        <h2>2m</h2>
+        <p>
+          程保つことが推奨されています
+        </p>
+      </div>
+    </div>
+
+    <div class="effect">
+      <div>
+        <h1 class="before_line">？ 2mってどれくらい ？
+          <hr class="line">
+        </h1>
+        <br>
+        <p>街の中で2mがどのくらいか想像してみてください
+          <br>適切な距離を知ることは、感染拡大防止のために大切なことです
+        </p>
+      </div>
+    </div>
+
+    <div class="effect">
+      <div>
+        <h1><button onclick="location.href='simulator.html'">シュミレーションしてみよう</button></h1>
+        <br>
+        <p>上のボタンをクリックして、生活の中の色々な2mを体感してみよう</p>
+      </div>
+    </div>
+
+    <footer>
+      <img class="down" src="images/triangle2.png">
+    </footer>
+
+</body>
+
+</html>

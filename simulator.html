@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>ソーシャルディスタンスシュミレーター</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="content-type" charset="utf-8">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/simulator.js" charset="utf-8"></script>
+        <link rel="stylesheet" type="text/css" href="css/simulator.css">
+    </head>
+    <body>
+
+        <header id="up_side">
+            <button class="top" onclick="location.href='index.html'">TOP</button>
+        </header>
+
+        <!-- for smartphone -->
+        <div id="popup">
+            <div class="block">
+              <img id="popup_img" src="images/smartphone.png">
+              <p>横向きでの閲覧を推奨します。</p>
+              <p><button id="close" class="button_link" onclick="window_close();">閉じる</button></p>
+            </div>
+          </div>
+        <div id="popup_overlay"></div>
+    
+
+        <div class="block1">
+            <h3>場所を選ぶ</h3>
+            <button class="situ active" id="town" onclick="change_situation(0);">街</button>
+            <button class="situ" id="station" onclick="change_situation(1);">駅</button>
+        </div>
+
+        <div class="block2">
+            <div class="triangle" >
+                <input id="back" type="image" src="images/triangle.png" onclick="change_images(0);">
+            </div>
+
+            <div class="images">
+                <img class="person" src="images/boy.png">
+                <img id="distance" src="images/crosswalk.png">
+                <img class="person" src="images/girl.png">
+            </div>
+
+            <div class="triangle" >
+                <input id="next" type="image" src="images/triangle.png" onclick="change_images(1);">
+            </div>
+
+            <div id="popup_detail">
+                <div class="block">
+                <img id="popup_detail_img" src="images/crosswalk2.png">
+                <p>※個体差があります。</p>
+                <p><button id="close" class="button_link" onclick="window_close();">閉じる</button></p>
+            </div>
+            </div>
+        </div>
+
+        <div class="block3">
+            <div id="obj">横断歩道の模様</div>
+            <button class="num" onclick="window_popup();">
+            <div id="num">5</div>
+            </button>
+            <div id="cnt">本分</div>
+        </div>
+
+        <footer id="down_side"></footer>
+
+    </body>
+</html>
